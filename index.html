@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id = "webBackground">
+
+    <h1 id="startTitle"><u>ToDo List</u></h1>
+
+
+
+    <label for="title">Title</label>
+    <input type="text" id="title">
+    <span>*</span>
+    <br>
+
+    <label for="dueDate">Due Date</label>
+    <input type="text" id="dueDate">
+    <span>*</span>
+    <br>
+
+    <input id="checkbox" type="checkbox">
+    <label for="isComplete">Is Completed?</label>
+    <br>
+    <input type="button" id="add" value="Add Item">
+    
+    
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <script src="js/main.js"></script>
+    <h2 id = "incompleteTitle">Incompleted Items</h2>
+    <div id="incompleteItems"></div>
+    <h2 id = "completeTitle">Completed Items</h2>
+    <div id="completeItems"></div>
+    
+</body>
+</html>
