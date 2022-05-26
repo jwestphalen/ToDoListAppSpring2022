@@ -1,5 +1,5 @@
-/*#completeItems{
-    color:green;
+#completeItems{
+    color:rgb(189, 250, 189);
     text-decoration: line-through;
     border: .2em solid green;
     max-width: 800px;
@@ -56,14 +56,18 @@
 }
 
 #startTitle{
-    color: rgb(236, 134, 0);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blue;
     max-width: 150px;
     
 }
 
 #webBackground{
-    background-color: rgba(0, 1, 68, 0.589);
+    background-color: rgb(26, 0, 25);
     color: white;
-}*/
+}
+
+#clearCache{
+    position:relative;
+margin-top:75%;
+}

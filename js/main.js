@@ -8,6 +8,8 @@ var ToDoItem = (function () {
 window.onload = function () {
     var addItem = document.getElementById("add");
     addItem.onclick = main;
+    var formReset = document.getElementById("clearCache");
+    formReset.onclick = clearCache;
     loadSavedItems();
 };
 function loadSavedItems() {
@@ -85,4 +87,8 @@ function getToDoItems() {
     var itemString = localStorage.getItem(todokey);
     var item = JSON.parse(itemString);
     return item;
+}
+function clearCache() {
+    localStorage.clear();
+    location.reload();
 }

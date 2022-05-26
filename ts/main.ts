@@ -11,6 +11,10 @@ class ToDoItem{
 window.onload = function(){
     let addItem = document.getElementById("add");
     addItem.onclick = main;
+    
+    let formReset = document.getElementById("clearCache");
+    formReset.onclick = clearCache;
+
 
     // Load saved item
     loadSavedItems();
@@ -141,4 +145,9 @@ function getToDoItems():ToDoItem[]{
     let itemString = localStorage.getItem(todokey);
     let item:ToDoItem[] = JSON.parse(itemString);
     return item;
+}
+
+function clearCache(){
+    localStorage.clear();
+    location.reload();
 }
